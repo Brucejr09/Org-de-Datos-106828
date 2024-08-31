@@ -1,32 +1,46 @@
 PRIMER ANALISIS
 
 *¿Cuál es la proporción de transacciones fraudulentas?
--La proporción de transacciones fraudulentas es del 0.035 .
+-La proporción de transacciones fraudulentas es del 3.502% respecto de la cantidad.
+-La proporción de transacciones fraudulentas es del 3.868% respecto de la monto.
 
-============================================================================================================================ cantidad y monto
+============================================================================================================================
 SEGUNDO ANALISIS
 
 *¿Qué relación existe entre el tipo de producto y el monto de la transacción y la columna target?
 	Calcular qué proporción de transacciones son fraudulentas para cada tipo de producto, y verificar si existe impacto.
 -El tipo de producto y la columna target (fraudes) agruparán y sumarán todos los montos de las transaccones a su
 	correspondiente celda, mostrando asi el monto de todos los productos legales y los que fueron fraudes.
+-La proporción de transacciones fraudulentas segun:
+		Monto		Cantidad
+	C	12.917%		11.395%
+	H	10.088%		4.629%
+	R	5.134%		3.623%
+	S	7.984%		6.262%
+	W	3.055%		2.073%
+-Existe impacto en el Monto de los productos C y H mayor al 10%, sin embargo, el impacto en la cantidad solo es en el
+	producto C es mayor al 10%
+-En el caso del máximo (C) y mínimo (W) producto que tuvo transacción fraudulenta es el mismo pero con porcentajes
+	diferentes. No obstante, el orden del mínimo al máximo es diferente.
 
-============================================================================================================================ (Duda impacto) falta cantidad
+============================================================================================================================
 TERCER ANALISIS
 
 *Al mismo tiempo, ¿los fraudulentos eligen algún tipo de producto en particular?
 	Calcular para las transacciones fraudulentas, qué proporción corresponde a cada uno de los tipos de producto.
 	¿Se puede sacar alguna conclusión?
--El producto W fue el que tuvo mayor cantidad de fraude respecto de los demás prodcutos con un monto de $ 1730240.
--El producto con mayor fraude (W) no fue el que tuvo mayor proporción de fraude en relación al total de cada producto, ese
-	valor le corresponde al producto C con 12.917 %.
+-El producto W fue el que tuvo mayor cantidad de fraude respecto de los demás prodcutos con un monto de $ 1730240 y cantidad
+	de 7676 productos.
+-El producto con mayor fraude (W) no fue el que tuvo mayor proporción de fraude en relación al total de cada producto ni
+	cantidad es más fue el mínimo en porcentajes de monto y cantidad. El máximo valor le corresponde al producto C con
+	12.917% de monto y 11.395% de cantidad.
  
 ============================================================================================================================
 CUARTO ANALISIS
 
 *¿Cuál es el monto promedio de las transacciones fraudulentas? (discriminado por dispositivo)
 	Calcularlo y comprobar si existe o no impacto.
--El monto promedio de transacciónes fraudulentas es de 5.228473e+05 .
+-
 
 ============================================================================================================================ (Duda dispositivo e impacto)
 QUINTO ANALISIS
@@ -53,12 +67,14 @@ SEPTIMO ANALISIS
 OCTAVO ANALISIS
 
 *¿Hay alguna tarjeta preferida por los fraudulentos?
--La tarjeta visa es la mas utilizada con 11327 fraudes echos.
+-La tarjeta visa es la mas utilizada con 11327 fraudes echos y un monto de $ 1684744.933.
 
-============================================================================================================================ en porcentaje
+============================================================================================================================
 NOVENO ANALISIS
 
 *En los datos vemos gran cantidad de valores nulos, ¿cómo los manejarías?
 -Los manejaria transformandolos en 0 para que no alteren las operaciones matemáticas que puedan utilizarse de ser necesario.
+	No obstante todo lo que tenga que ver con datos str se tendrian que ver los casos particulates de este tipo y 
+	desarrollar el cambio necesario acorde a la situación.
 
 ============================================================================================================================
