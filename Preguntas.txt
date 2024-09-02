@@ -40,9 +40,21 @@ CUARTO ANALISIS
 
 *¿Cuál es el monto promedio de las transacciones fraudulentas? (discriminado por dispositivo)
 	Calcularlo y comprobar si existe o no impacto.
--
+-En las transacciones fraudulentas discriminadas por dispositivo se observa lo siguiente:
+	Dispositivo	Cantidad	Promedio en %		
+	Otro		71		0.743066
+	desktop		4758		49.795918
+	mobile		4726		49.461015
+	De todas las transacciones fraudulentas no hubo diferencia entre los fraudes echos por computadora y los celulares.
 
-============================================================================================================================ (Duda dispositivo e impacto)
+	Por el lado de los modelos se puede destacar que se usaron solo 1 vez los siguientes: Samsung/SM-G531H,
+	chrome 62.0 for ios, firefox 55.0, ie 11.0 for tablet, mobile safari 8.0, samsung browser 4.0 y samsung browser 7.0
+	Pero el modelo mas utilizado fue el chrome 63.0 usado 1500 generando un promedio de los fraudes de 15.699%
+
+	Por el lado de los sistemas lo que se puede destacar es que Windows fue el mas utilizado con 2607 de veces generando
+	un porcentaje de 27.284%
+	
+============================================================================================================================
 QUINTO ANALISIS
 
 *¿Cuál es el impacto del tiempo en la probabilidad de fraude?
