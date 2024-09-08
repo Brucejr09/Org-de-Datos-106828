@@ -59,23 +59,35 @@ QUINTO ANALISIS
 
 *¿Cuál es el impacto del tiempo en la probabilidad de fraude?
 	¿Cómo se distribuyen los casos fraudulentos a lo largo del tiempo?
--
+-A lo largo del tiempo se realizaron 17580 de fraudes en un lapso de 13065440 segundos, lo cual genero un promedio de 3.502%
+	de fraude. Analizando esto, no hubo un impacto significativo durante los minutos transcurridos ya que el mismo no
+	superaba un promedio del 0.001% como máximo. Luego a lo largo de las horas este paso a ser de un promedio del 0.008%
+	como máximo. En cambio, al pasar de los días este se intensificó logrando un promedio del 0.047% como máximo. A su vez,
+	el transcurso de la semana aumenta el fraude a un promedio entre 0.07% y 0.213% el cual ya implica un mayor peso. Y fue
+	notorio a lo largo de los meses estafleciendose en un porcentaje que abarca un oscilante de 0.6% de fraude en los 5
+	primero 5 meses y baja a ser de un 0.197% en el último mes.
 
-============================================================================================================================ (Duda impacto)
+============================================================================================================================
 SEXTO ANALISIS
 
 *Apoyarse del valor de timestamp para calcular la distribución de transacciones fraudulentas.
 	Verificar el porcentaje de dichas transacciones a lo largo del tiempo.
 	¿Se puede llegar a alguna conclusión en base a esta información?
--Que no suceden mas de 4 transacciones fraudulentas al mismo tiempo.
+-El fraude se puede notar de manera significativa a lo largo de los días con un máximo del 0.047% y aumentando a medida que
+	transcurre la semana con un promedio que se encuentra entre el 0.07% y 0.213% pero cuando ya se hace presente es de
+	manera mensual con un oscilante del 0.6% en los primeros 5 meses pero una disminución abrupta en el último mes con un
+	0.197% de fraude solamente.
 
-============================================================================================================================ segundo hecho falta min hora dia
+============================================================================================================================
 SEPTIMO ANALISIS
 
 *¿Hay alguna plataforma más utilizada que otras para cometer fraude?
--
+-Observando que Windows con un uso de 2607 de veces generando un porcentaje de 27.284% de todos los fraudes junto con
+	chrome 63.0 usado 1500 generando un promedio de los fraudes de 15.699%, prodriamos deducir que dado que los fruades
+	desde computadora y selular fueron equitativos, lo más probables es que la computadora haya sido el dispositivo más
+	utilizado para realizar los fraudes.
 
-============================================================================================================================ (Duda plataforma)
+============================================================================================================================
 OCTAVO ANALISIS
 
 *¿Hay alguna tarjeta preferida por los fraudulentos?
