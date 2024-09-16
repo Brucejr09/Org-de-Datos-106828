@@ -41,18 +41,23 @@ CUARTO ANALISIS
 *¿Cuál es el monto promedio de las transacciones fraudulentas? (discriminado por dispositivo)
 	Calcularlo y comprobar si existe o no impacto.
 -En las transacciones fraudulentas discriminadas por dispositivo se observa lo siguiente:
-	Dispositivo	Cantidad	Promedio en %		
-	Otro		71		0.743066
-	desktop		4758		49.795918
-	mobile		4726		49.461015
-	De todas las transacciones fraudulentas no hubo diferencia entre los fraudes echos por computadora y los celulares.
+	Dispositivo	Fraude		Legal		Promedio de fraude en %		Promedio de legal en %
+	Otro		71		2866		2.42				97.58
+	desktop		4758		69946		6.37				93.63
+	mobile		4726		43198		9.86				90.14
+	De todas las transacciones fraudulentas no hubo diferencia entre los fraudes echos por computadora y los celulares
+	respecto de la cantidad, y si se nota un leve porcentaje mayor respecto del promedio en los celulares alrededor de
+	un 10%.
 
-	Por el lado de los modelos se puede destacar que se usaron solo 1 vez los siguientes: Samsung/SM-G531H,
-	chrome 62.0 for ios, firefox 55.0, ie 11.0 for tablet, mobile safari 8.0, samsung browser 4.0 y samsung browser 7.0
-	Pero el modelo mas utilizado fue el chrome 63.0 usado 1500 generando un promedio de los fraudes de 15.699%
+	Por el lado de los modelos se puede destacar que OPERA con un porcentaje del 38.4% y ANDROID con un 20.4 son los
+	promedios mas altos, no obstante no es son los que tienen mayor cantidad de fraudes, estos son CHROME con 6158 y
+	SAFARI con 2052.
 
-	Por el lado de los sistemas lo que se puede destacar es que Windows fue el mas utilizado con 2607 de veces generando
-	un porcentaje de 27.284%
+	Por el lado de los sistemas lo que se puede destacar de las agrupaciones echas es que WINDOWS fue el mas utilizado
+	con 2610 de veces, pero su porcentaje no fue el mayor para realizar fraudes ya que por ejemplo IPHONE y NOKIA se
+	utilizaron solamente para utilizar fraudes, entre otros sistemas que fueron agrupados en otros, pero no eran marcas
+	conocidas, pero al agruparlos generador una gran cantidad de fraudes alrededor de 2484. Luego otros promedios
+	destacables fueron BUILD(celulares), GT, MOTO y ZTE superando el 15%, sin embargo GT y ZTE no tubieron gran uso.
 	
 ============================================================================================================================
 QUINTO ANALISIS
@@ -62,10 +67,11 @@ QUINTO ANALISIS
 -A lo largo del tiempo se realizaron 17580 de fraudes en un lapso de 13065440 segundos, lo cual genero un promedio de 3.502%
 	de fraude. Analizando esto, no hubo un impacto significativo durante los minutos transcurridos ya que el mismo no
 	superaba un promedio del 0.001% como máximo. Luego a lo largo de las horas este paso a ser de un promedio del 0.008%
-	como máximo. En cambio, al pasar de los días este se intensificó logrando un promedio del 0.047% como máximo. A su vez,
-	el transcurso de la semana aumenta el fraude a un promedio entre 0.07% y 0.213% el cual ya implica un mayor peso. Y fue
-	notorio a lo largo de los meses estafleciendose en un porcentaje que abarca un oscilante de 0.6% de fraude en los 5
-	primero 5 meses y baja a ser de un 0.197% en el último mes.
+	como máximo. En cambio, al pasar de los días este se intensificó logrando los rangos de fraudes sean oscilantes con
+	muchos picos crecientes pero tambien decrecientes. A su vez, el transcurso de la semana aumenta el fraude a un promedio
+	entre 0.07% y 0.213% el cual ya implica un mayor peso y generando una curva mas alta de fraudes. Y fue notorio a lo
+	largo de los meses estafleciendose en un porcentaje que abarca un oscilante de 0.6% de fraude en los 5 primero 5 meses
+	y baja a ser de un 0.197% en el último mes pero la curva fue mas constantes con su pico mas alto en el 3er mes.
 
 ============================================================================================================================
 SEXTO ANALISIS
@@ -73,25 +79,30 @@ SEXTO ANALISIS
 *Apoyarse del valor de timestamp para calcular la distribución de transacciones fraudulentas.
 	Verificar el porcentaje de dichas transacciones a lo largo del tiempo.
 	¿Se puede llegar a alguna conclusión en base a esta información?
--El fraude se puede notar de manera significativa a lo largo de los días con un máximo del 0.047% y aumentando a medida que
-	transcurre la semana con un promedio que se encuentra entre el 0.07% y 0.213% pero cuando ya se hace presente es de
-	manera mensual con un oscilante del 0.6% en los primeros 5 meses pero una disminución abrupta en el último mes con un
-	0.197% de fraude solamente.
+-El fraude se puede notar de manera significativa a lo largo de los días y aumentando a medida que transcurre la semana con un
+	promedio que se encuentra entre el 0.07% y 0.213% manteniendo una oscilacion muchisimo menor pero cuando ya se hace
+	presente es de manera mensual con un oscilante del 0.6% en los primeros 5 meses pero una disminución abrupta en el
+	último mes con un 0.197% de fraude solamente y una curva mas constante hasta el 5to mes y su pico mas alto en el 3er mes.
 
 ============================================================================================================================
 SEPTIMO ANALISIS
 
 *¿Hay alguna plataforma más utilizada que otras para cometer fraude?
--Observando que Windows con un uso de 2607 de veces generando un porcentaje de 27.284% de todos los fraudes junto con
-	chrome 63.0 usado 1500 generando un promedio de los fraudes de 15.699%, prodriamos deducir que dado que los fruades
-	desde computadora y selular fueron equitativos, lo más probables es que la computadora haya sido el dispositivo más
-	utilizado para realizar los fraudes.
+-Observando que WINDOWS con un uso de 2610 de veces junto con CHROME usado 6158 veces, prodriamos deducir que dado que los
+	fruades desde computadora y celular fueron equitativos, lo más probables es que la computadora haya sido el dispositivo
+	más utilizado para realizar los fraudes.
+	Por otro lado segun los promedios podemos decir que IPHONE y NOKIA junto con otros sistemas incluidos en OTRO, las
+	cuales no son marcas conocidas, fueron usados solamente para fraudes, obteniendo un porcentaje del 100%, pero con muy
+	poca cantidad de usos. Tambien por el lado de los modelos es destacable OPERA con el porcentaje mas alto de 38.4% de
+	fraude.
 
 ============================================================================================================================
 OCTAVO ANALISIS
 
 *¿Hay alguna tarjeta preferida por los fraudulentos?
--La tarjeta visa es la mas utilizada con 11327 fraudes echos y un monto de $ 1684744.933.
+-La tarjeta visa es la mas utilizada con 11327 fraudes echos y un monto de $ 1684744.933 no obstante a nivel de promedios no
+	fue la mas destacable sino que fue discover con un promedio del 10.3% pero su uso total (fraude y legal) no supero la
+	cantidad de fraudes que hubo en visa.
 
 ============================================================================================================================
 NOVENO ANALISIS
