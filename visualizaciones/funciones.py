@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from seaborn import catplot
+from seaborn import heatmap, color_palette
 
 def tipo_transferencia(numero) -> str:
     if numero == 0:
@@ -27,35 +27,6 @@ def cantidad_producto(letra) -> int:
     else:
         return 0
 
-
-def redondeo(numero) -> int:
-    return round(numero)
-
-def hasta_mil(numero):
-    if numero > 1000:
-        return 1000
-    return numero
-
-def hasta_10_mil(numero):
-    if numero > 10000:
-        return 10000
-    return numero
-
-def hasta_100_mil(numero):
-    if numero > 100000:
-        return 100000
-    return numero
-
-def hasta_un_millon(numero):
-    if numero > 1000000:
-        return 1000000
-    return numero
-
-def hasta_10_milllones(numero):
-    if numero > 10000000:
-        return 10000000
-    return numero
-
 def dia(tiempo) -> int:
     dia = (tiempo - 86400) / 86400
     if dia > round(dia):
@@ -74,5 +45,8 @@ def scatter(x1, x2, y1, y2):
     plt.legend()
     plt.show()
 
-def barplot(df, monto):
-    return catplot(data=df, x="Tipo de producto", y=monto, hue="Tarjeta", kind="bar", col="Transaccion")
+def heatmap_plot(df):
+    plot = heatmap(df, annot=True, cmap=color_palette("flare", as_cmap=True))
+    plot.set_title("Promedio de montos")
+    plot.xaxis.tick_top()
+    return plot
