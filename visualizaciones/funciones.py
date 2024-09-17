@@ -8,16 +8,15 @@ def tipo_transferencia(numero) -> str:
         return "Fraude"
 
 def monto_en_rangos(numero) -> int:
-    rangos = [0, 100, 500]
-    rangos.extend(list(range(1000, 6001, 1000)))
+    rangos = list(range(0, 1001, 100))
 
     for rango in rangos:
         if numero < rango:
             return rango
+    return rangos[len(rangos) - 1]
 
 def cargar_rango(rango) -> str:
-    rangos = [0, 100, 500]
-    rangos.extend(list(range(1000, 6001, 1000)))
+    rangos = list(range(0, 1001, 100))
     indice = rangos.index(rango)
 
     return f"({rangos[indice - 1]} - {rangos[indice]}]"
