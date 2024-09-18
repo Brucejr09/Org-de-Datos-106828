@@ -1,3 +1,5 @@
+#                   FUNCIONES   INVOLUCRADAS    PARA    EL  ANALISIS    EXPLORATORIO
+
 import matplotlib.pyplot as plt
 
 def tipo_transferencia(numero) -> str:

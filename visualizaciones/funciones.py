@@ -1,5 +1,6 @@
+#                   FUNCIONES   INVOLUCRADAS    PARA    LAS     VISUALIZACIONES
+
 import matplotlib.pyplot as plt
-from seaborn import heatmap, color_palette
 
 def tipo_transferencia(numero) -> str:
     if numero == 0:
@@ -44,9 +45,3 @@ def scatter(x1, x2, y1, y2):
     plt.ylabel("Monto en $")
     plt.legend()
     plt.show()
-
-def heatmap_plot(df):
-    plot = heatmap(df, annot=True, cmap=color_palette("flare", as_cmap=True))
-    plot.set_title("Promedio de montos")
-    plot.xaxis.tick_top()
-    return plot
