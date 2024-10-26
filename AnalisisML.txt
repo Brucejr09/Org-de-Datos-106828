@@ -1,0 +1,34 @@
+Entrenar una Regresion Logistica
+
+Responder:
+	-¿Cómo conviene obtener el dataset para validar?
+	-¿Cuál es el mejor score de validación obtenido?
+	-¿Qué features son los más importantes para predecir con el mejor modelo?
+	-Graficar el feature importante
+
+======================================================================================
+
+Diseñar y entrenar 2 modelos distintos a eleccion.
+Cada uno debe incluir su respectiva búsqueda de hiperparametros y feature engineering.
+
+Requisitos:
+	-Los modelos entre si deben ser de distintos tipos excluyendo regresiones logísticas.
+	-Utilizar AUC-ROC como métrica de validación.
+	-Deben medirse en validación.
+	-Deben ser reproducibles (el resultado del notebook siempre debe ser el mismo).
+	-Tener un score en validación superior a 0,8.
+	-Para el feature engineering debe utilizarse al menos una vez:
+	-Imputación de nulos
+	-Mean encoding
+	-One hot encoding
+	-Utilizar al menos 80 features (contando cómo features columnas con números, pueden venir varios de la misma variable).
+	-Utilizar las columnas: id_31, id_33, DeviceType, DeviceInfo.
+	-Utilizar CountVectorizer o TfIdfVectorizer para algún feature.
+	-Ambos modelos deben cumplir TODOS los requerimientos
+
+Responder:
+	-¿Cómo conviene elegir los datos de validación respecto de los de train?.
+	-¿Cuál de los dos modelos arroja mejores resultados?
+	-¿Por que cree que se dio ese resultado?
+
+======================================================================================
