@@ -15,6 +15,7 @@ def unicidad_sistema(string) -> str:
     ("ALCATEL", 2004),
     ("IPHONE", 2007),
     ("BUILD", 1970)]
+
     for sistema in lista:
         match string.upper().find(sistema[0]):
             case -1:
@@ -32,6 +33,7 @@ def unicidad_modelo(string) -> str:
     ("OPERA", 1995),
     ("EDGE", 2015),
     ("ANDROID", 2007)]
+    
     for modelo in lista:
         match string.upper().find(modelo[0]):
             case -1:
